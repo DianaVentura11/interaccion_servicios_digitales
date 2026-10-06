@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SISTEMAS DIGITALES</title>
+    <link rel="icon" type="image/png" href="../imagen/images.png">
+    <link rel="stylesheet" href="../css/estiloprin.css">
+    <link rel="stylesheet" href="../css/multimedia.css">
+    <link rel="stylesheet" href="../css/ecommerce.css">
+    <link rel="stylesheet" href="../css/correo.css">
+    <link rel="stylesheet" href="../css/graphql.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>DASHBORD DE SERVICIOS DIGITALES</h1>
+        <p>FRONTEND API CONSUMER</p>
+    </header>
+
+    <div class="contenedor">
+
+        <aside>
+            <h2>Menú</h2>
+
+            <nav>
+                <button onclick="mostrarSeccion('inicio')">
+                    🏠 Inicio
+                </button>
+
+                <button onclick="mostrarSeccion('correo')">
+                    ✉️ Correo
+                </button>
+
+                <button onclick="mostrarSeccion('ecommerce')">
+                    🛒 E-Commerce
+                </button>
+
+                <button onclick="mostrarSeccion('multimedia')">
+                    🎬 Multimedia
+                </button>
+
+                <button onclick="mostrarSeccion('graphql')">
+                    ⚡ GraphQL
+                </button>
+            </nav>
+        </aside>
+
+        <main id="contenido">
+
+            <section class="inicio">
+
+                <h2>Bienvenido al Centro de Control</h2>
+                
+                <div class="tarjetas">
+
+                    <div class="tarjeta">
+                        <span>✉️</span>
+                        <h3>Notificaciones</h3>
+                        <p>
+                            Envío de mensajes mediante una API.
+                        </p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <span>🛒</span>
+                        <h3>E-Commerce</h3>
+                        <p>
+                            Consulta de productos y carrito de compras.
+                        </p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <span>🎬</span>
+                        <h3>Multimedia</h3>
+                        <p>
+                            Reproducción y consulta de contenido multimedia.
+                        </p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <span>⚡</span>
+                        <h3>GraphQL</h3>
+                        <p>
+                            Consulta de información mediante GraphQL.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>EQUIPOOOO PEPE</p>
+    </footer>
+
+    <script src="../js/prin.js"></script>
+    <script src="../js/multimedia.js"></script>
+    <script src="../js/ecommerce.js"></script>
+    <script src="../js/correo.js"></script>
+    <script src="../js/graphql.js"></script>
+
+
+</body>
+</html>
+

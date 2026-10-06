@@ -1,0 +1,211 @@
+.player-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    color: #333;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.player-container .player-header {
+    background: linear-gradient(135deg, #6c3483, #8e44ad);
+    color: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+.player-container .player-header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.player-container .api-search-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+    background-color: #f8f5fa;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eadff0;
+}
+
+.player-container .search-box,
+.player-container .select-box {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.player-container .select-box label {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.player-container input[type="text"] {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d5d5d5;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.player-container input[type="text"]:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 0 3px rgba(142, 68, 173, 0.1);
+}
+
+.player-container select {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d5d5d5;
+    background-color: white;
+    color: #444;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.player-container select:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 0 3px rgba(142, 68, 173, 0.1);
+}
+
+.player-container .search-box button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(
+        135deg,
+        #6c3483,
+        #8e44ad
+    );
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.player-container .search-box button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(108, 52, 131, 0.3);
+}
+
+.player-container .search-box button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.player-container .video-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.player-container .video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+.player-container .metadata-panel {
+    margin-top: 25px;
+    background-color: #f8f5fa;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eadff0;
+}
+
+.player-container .metadata-panel h3 {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    color: #6c3483;
+}
+
+.player-container .grid-stats {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.player-container .stat-card {
+    background-color: white;
+    padding: 14px 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.player-container .stat-card .label {
+    color: #777;
+}
+
+.player-container .stat-card .value {
+    font-weight: bold;
+    color: #8e44ad;
+    text-align: right;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .player-container {
+        padding: 20px;
+    }
+
+    .player-container .player-header {
+        padding: 20px;
+    }
+
+    .player-container .player-header h2 {
+        font-size: 23px;
+    }
+
+    .player-container .search-box,
+    .player-container .select-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .player-container .select-box label {
+        white-space: normal;
+    }
+
+    .player-container .search-box button {
+        width: 100%;
+    }
+
+    .player-container .grid-stats {
+        grid-template-columns: 1fr;
+    }
+}

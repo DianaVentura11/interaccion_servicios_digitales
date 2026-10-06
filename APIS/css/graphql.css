@@ -1,0 +1,219 @@
+
+.graphql-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.graphql-header {
+    background: linear-gradient(
+        135deg,
+        #6c3483,
+        #8e44ad
+    );
+
+    color: white;
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(108, 52, 131, 0.25);
+}
+.graphql-header h2 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+}
+.graphql-header p {
+    margin: 0;
+
+    opacity: 0.9;
+}
+.graphql-controls {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+.graphql-controls button {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #6c3483,
+        #8e44ad
+    );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+.graphql-controls button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px
+        rgba(108, 52, 131, 0.3);
+}
+.graphql-controls p {
+    color: #666;
+
+    margin: 15px 0 0;
+}
+.graphql-container .personajes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fill,
+            minmax(280px, 1fr)
+        );
+
+    gap: 22px;
+}
+.graphql-container .tarjeta-personaje {
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.graphql-container .tarjeta-personaje:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.15);
+}
+.graphql-container
+.tarjeta-personaje img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+}
+.graphql-container
+.tarjeta-personaje
+.informacion {
+
+    padding: 20px;
+}
+.graphql-container
+.tarjeta-personaje
+.informacion h2 {
+
+    margin: 0 0 12px;
+
+    color: #6c3483;
+
+    font-size: 21px;
+}
+.graphql-container .estado {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #555;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+.graphql-container .punto {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+}
+
+.graphql-container .punto.alive {
+    background-color: #2ecc71;
+}
+
+.graphql-container .punto.dead {
+    background-color: #e74c3c;
+}
+
+.graphql-container .punto.unknown {
+    background-color: #999;
+}
+.graphql-container .etiqueta {
+
+    margin: 12px 0 3px;
+
+    color: #999;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.graphql-container .dato {
+
+    margin: 0;
+
+    color: #444;
+
+    font-size: 14px;
+}
+.graphql-container .error {
+
+    color: #a93226;
+
+    font-weight: bold;
+}
+@media (max-width: 700px) {
+
+    .graphql-header {
+        padding: 20px;
+    }
+
+    .graphql-header h2 {
+        font-size: 24px;
+    }
+
+    .graphql-container .personajes {
+        grid-template-columns: 1fr;
+    }
+}

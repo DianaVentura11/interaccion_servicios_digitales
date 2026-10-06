@@ -1,0 +1,161 @@
+/* ================================
+   DISEÑO DE CORREO
+================================ */
+
+.correo-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+.correo-container h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #6c3483;
+    font-size: 28px;
+}
+
+.correo-container > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Formulario */
+
+#form-correo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo-correo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo-correo label {
+    font-weight: bold;
+    color: #444;
+}
+
+.campo-correo input,
+.campo-correo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+/* Cuando seleccionas un campo */
+
+.campo-correo input:focus,
+.campo-correo textarea:focus {
+    border-color: #6c3483;
+    box-shadow: 0 0 0 2px rgba(108, 52, 131, 0.1);
+}
+
+
+/* Textarea */
+
+.campo-correo textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+
+/* Botón */
+
+#form-correo button {
+    background-color: #6c3483;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#form-correo button:hover {
+    background-color: #512e5f;
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   MENSAJES
+================================ */
+
+#respuesta-correo {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Éxito */
+
+#respuesta-correo.exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #b7dfc1;
+}
+
+
+/* Error de datos */
+
+#respuesta-correo.error-datos {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+
+/* Error de autenticación */
+
+#respuesta-correo.error-auth {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f1b0b7;
+}
+
+
+/* Cargando */
+
+#respuesta-correo.cargando {
+    background-color: #e8dff0;
+    color: #6c3483;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+    .correo-container {
+        padding: 20px;
+    }
+
+    .correo-container h2 {
+        font-size: 23px;
+    }
+
+}
