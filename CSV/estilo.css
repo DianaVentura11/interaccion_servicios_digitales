@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: #f8f5f0;;
+    color: #333;
+}
+h1 {
+    color: #d85b87;
+}
+h3 {
+    margin-top: 25px;
+    color: #c94f7c;
+}
+input, select, button {
+    padding: 9px;
+    margin: 5px 0;
+}
+input, select {
+    border: 1px solid #e8b4c7;
+    border-radius: 5px;
+}
+button {
+    background: #e879a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #d65385;
+}
+#buscar {
+    width: 300px;
+    max-width: 90%;
+}
+.tabla {
+    max-height: 350px;
+    overflow: auto;
+    background: white;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    font-size: 13px;
+}
+th, td {
+    border: 1px solid #e8c5d2;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+th {
+    background: #f8c8dc;
+    position: sticky;
+    top: 0;
+}
+#resultados {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e8c5d2;
+    border-radius: 5px;
+}
+button:disabled {
+    opacity: 0.5;
+}
+
+
+  

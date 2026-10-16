@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpg" type="image/png">
+     <link rel="stylesheet" href="estilo.css">
+    <title>Analizador CSV</title>
+</head>
+<body>
+    <h1>Analizador de archivos CSV</h1>
+    <h3>Seleccionar archivo</h3>
+    <input type="file" id="archivo" accept=".csv,.txt">
+    <button id="cargar">Cargar archivo</button>
+    <p id="mensaje"></p>
+    <h3>Buscar información</h3>
+    <input type="text" id="buscar"  placeholder="Escribe para filtrar..." disabled>
+    <h3>Datos del archivo</h3>
+    <p id="cantidad">Aquí aparecerán los datos.</p>
+    <div class="tabla">
+        <table id="tabla">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <h3>Calcular estadísticas</h3>
+    <label for="columna">
+        Selecciona el dato que quieres calcular:
+    </label>
+    <select id="columna" disabled>
+        <option value="">Primero carga un archivo CSV</option>
+    </select>
+    <button id="calcular" disabled>
+        Calcular
+    </button>
+    <h3>Resultados estadísticos</h3>
+    <div id="resultados">Todavía no hay resultados.</div>
+    <button id="descargar" disabled>
+        Descargar TXT
+    </button>
+    <script src="app.js"></script>
+</body>
+</html>
